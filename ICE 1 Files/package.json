@@ -1,7 +1,7 @@
 {
   "name": "docker-nodejs",
   "version": "1.0.0",
-  "main": "index1.js",
+  "main": "index.js",
   "license": "MIT",
   "scripts": {
     "prettify": "prettier -l --write \"**/*.js\"",
