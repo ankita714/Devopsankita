@@ -1,7 +1,7 @@
-services:
+services
   server:
     build:
-      context: .
+      context: 
     environment:
       NODE_ENV: production
     ports:
