@@ -1,0 +1,15 @@
+version: 0.2
+
+phases:
+  install:
+    commands:
+      - cd "ICE 1 Files"  # <--- Navigate to your project directory
+      - npm install       # <--- Install Node.js dependencies (if applicable)
+      - docker-compose pull # <--- Pull any updated images from Docker Hub (optional)
+  build:
+    commands:
+      - cd "ICE 1 Files"  # <--- Navigate to your project directory
+      - docker-compose build  # <--- Build the Docker images
+  post_build:
+    commands:
+      - echo Build completed on `date`
